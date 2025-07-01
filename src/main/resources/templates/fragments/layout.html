@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" th:fragment="layout(title, content)">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:replace="${title}">Document</title>
+</head>
+<body>
+    <header>
+        <h1>Il a pas dit bonjour</h1>
+        <a th:href="@{/}">Accueil</a>
+        <a th:href="@{/salut}">Dire Bonjour</a>
+        <a th:href="@{/products}">Liste des Produits</a>
+    </header>
+    <div th:replace="${content}"></div>
+</body>
+</html>
